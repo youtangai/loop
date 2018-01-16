@@ -4,4 +4,5 @@ FROM alpine:latest
 WORKDIR /app
 COPY main /app
 ENTRYPOINT ./main
+
 # EXPOSE 5000
