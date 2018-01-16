@@ -4,8 +4,15 @@ main: main.go
 clean:
 	rm -f main
 
-run:
+test:
 	go run main.go
 
 build: main
 	docker build -t print_loop:latest .
+
+run:
+	docker run -d --name print_loop print_loop
+
+down:
+	docker stop print_loop
+	docker rm print_loop
