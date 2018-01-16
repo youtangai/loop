@@ -16,3 +16,6 @@ run:
 down:
 	docker stop print_loop
 	docker rm print_loop
+
+logs:
+	docker logs -f print_loop
